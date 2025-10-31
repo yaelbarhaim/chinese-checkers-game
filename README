@@ -1,0 +1,20 @@
+Extensions List:
+1. Capture version of the game:
+An option to choose this version will be given every time main.py run.
+When opening the game, a question will be displayed to the user about choosing a version (typing the letter c means choosing Capture).
+2. Pytest tests writing:
+All the tests files are located in the main directory of the project.
+3. Sound effects additions to different parts of the game:
+This extension will automatically work every run of the game. 
+A sounds folder with all the audio files will be found in the main project folder.
+4. Adding colors (That also have a role in the game):
+This extension will also automatically work every time you run the game.
+5. Type Annotations
+6. In addition to the log file requirements, I added an option to read a file even while playing, (for example for learning strategy) and return to the same point of the game without interruption.
+Activating this extension is possible at every start of a local player's turn, when entering 'logs' the player will be directed to select a file to display and then choose whether to return to the game they interrupted.
+
+Partial Explanations:
+1. Tests in Pytest:
+In this extension I learned and applied beyond the study material. In addition to simpler tests, I added functions that 'catch' printouts of the program and examine them, and those that complete expected input from the user (valid and invalid) and even a sequence of such inputs. For this, I used 'monkeypatch' and 'capsys' a lot.
+2. Adding colors:
+In this extension I colored the game pieces in accordance with the selected colors of the players. In my opinion, in the two versions of the game that I built, this extension greatly affects the user experience and optimizes the course of the game. In the first version, the game pieces are divided according to a single-digit number and color, so that to choose a marble the player just types in the desired digit ('saving' work for the user). In addition, it allows easier and faster visual analysis. For this I used the colorama library.)
